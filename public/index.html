@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" href="./assets/images/logo.png">
   <title>The Nature Siri</title>
 
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <!--
 
 TemplateMo 591 villa agency
@@ -100,81 +102,64 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div> -->
 
+
   <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
     <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
       <!-- สไลด์ที่ 1 -->
-      <div class="swiper-slide main-banner-item-1" role="group" aria-roledescription="slide" aria-label="1 / 5"
-        data-swiper-slide-index="0">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner01.webp" alt="Banner 1">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img loading="lazy" src="./assets/images/banner01.webp" alt="Banner 1"></figure>
       </div>
       <!-- สไลด์ที่ 2 -->
-      <div class="swiper-slide main-banner-item-2" role="group" aria-roledescription="slide" aria-label="2 / 5"
-        data-swiper-slide-index="1">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner03.webp" alt="Banner 2">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img  loading="lazy" src="./assets/images/banner03.webp" alt="Banner 2"></figure>
       </div>
       <!-- สไลด์ที่ 3 -->
-      <div class="swiper-slide main-banner-item-3" role="group" aria-roledescription="slide" aria-label="3 / 5"
-        data-swiper-slide-index="2">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner04.webp" alt="Banner 3">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img  loading="lazy" src="./assets/images/banner04.webp" alt="Banner 3"></figure>
       </div>
       <!-- สไลด์ที่ 4 -->
-      <div class="swiper-slide main-banner-item-3" role="group" aria-roledescription="slide" aria-label="4 / 5"
-        data-swiper-slide-index="3">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner05.webp" alt="Banner 4">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img loading="lazy" src="./assets/images/banner05.webp" alt="Banner 4"></figure>
       </div>
       <!-- สไลด์ที่ 5 -->
-      <div class="swiper-slide main-banner-item-3" role="group" aria-roledescription="slide" aria-label="5 / 5"
-        data-swiper-slide-index="4">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner06.webp" alt="Banner 5">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img  loading="lazy" src="./assets/images/banner06.webp" alt="Banner 5"></figure>
       </div>
       <!-- สไลด์ที่ 6 -->
-      <div class="swiper-slide main-banner-item-3" role="group" aria-roledescription="slide" aria-label="5 / 5"
-        data-swiper-slide-index="4">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner07.webp" alt="Banner 5">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img loading="lazy" src="./assets/images/banner07.webp" alt="Banner 6"></figure>
       </div>
       <!-- สไลด์ที่ 7 -->
-      <div class="swiper-slide main-banner-item-3" role="group" aria-roledescription="slide" aria-label="5 / 5"
-        data-swiper-slide-index="4">
-        <figure class="swiper-slide-inner">
-          <img decoding="async" class="swiper-slide-image" src="./assets/images/banner08.webp" alt="Banner 5">
-        </figure>
+      <div class="swiper-slide">
+        <figure><img  loading="lazy" src="./assets/images/banner08.webp" alt="Banner 7"></figure>
       </div>
     </div>
 
+    <!-- ปุ่มเลื่อนซ้าย-ขวา -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 
-    <!-- Pagination -->
-    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-      <span class="swiper-pagination-bullet swiper-pagination-bullet-active" data-bullet-index="0"
-        aria-label="Go to slide 1" tabindex="0" aria-current="true"></span>
-      <span class="swiper-pagination-bullet" data-bullet-index="1" aria-label="Go to slide 2"></span>
-      <span class="swiper-pagination-bullet" data-bullet-index="2" aria-label="Go to slide 3"></span>
-      <span class="swiper-pagination-bullet" data-bullet-index="3" aria-label="Go to slide 4"></span>
-      <span class="swiper-pagination-bullet" data-bullet-index="4" aria-label="Go to slide 5"></span>
-    </div>
+    <!-- จุดแสดงตำแหน่งสไลด์ -->
+    <div class="swiper-pagination"></div>
+</div>
 
-    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
+
+
+  <!-- Pagination -->
+
+
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   </div>
 
-  <div id= properties class="properties section">
+  <div id=properties class="properties section">
     <div class="container-fluid px-5">
       <div class="row align-items-center">
         <!-- Left Side: Text Content -->
         <div class="col-lg-5" style="padding-left: 50px;">
           <div class="section-heading">
             <h6>| Properties</h6>
-            <h2 class="title-nature"  >THE NATURE SIRI</h2>
+            <h2 class="title-nature">THE NATURE SIRI</h2>
             <h4 style="color: rgba(0, 0, 0, 0.5);">Current Project</h4>
             <p>
               Discover family bliss in our 3-bedroom private pool villa at thenaturesiri
@@ -435,7 +420,7 @@ https://templatemo.com/tm-591-villa-agency
               </div>
             </div>
             <div class="col-lg-6">
-              
+
               <div class="item email">
                 <!-- <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;"> -->
                 <h6><i class="fa-solid fa-envelope"></i> sale@thenaturesiri.com<br><span>Business Email</span></h6>
@@ -454,8 +439,20 @@ https://templatemo.com/tm-591-villa-agency
               </div>
               <div class="col-lg-12">
                 <fieldset>
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Phone Number..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
                   <label for="email">Email Address</label>
                   <input type="email" name="email" id="email" placeholder="Your E-mail..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="whatsappid">WhatsApp ID</label>
+                  <input type="text" name="whatsappid" id="whatsappid" placeholder="Your WhatsApp ID..." required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -554,21 +551,28 @@ https://templatemo.com/tm-591-villa-agency
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true, // การเลื่อนวนรอบ
-      autoplay: {
-        delay: 5000, // ตั้งเวลาเปลี่ยนภาพ (5 วินาที)
-      },
-      speed: 2000, // ความเร็วในการเปลี่ยนภาพ (2 วินาที)
-      slidesPerView: 1, // จำนวนภาพที่แสดงในหนึ่งหน้า
-      spaceBetween: 0, // ระยะห่างระหว่างภาพ
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      effect: 'slide', // ใช้การเลื่อนจากขวาไปซ้าย
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "slide",
+      });
     });
-  </script>
+    </script>
   <script>
     // เพิ่มฟังก์ชันถ้าต้องการการเคลื่อนไหวหรือการแสดงข้อความเมื่อคลิก
     document.getElementById('whatsapp-chat').addEventListener('click', function () {
@@ -588,6 +592,7 @@ https://templatemo.com/tm-591-villa-agency
       document.getElementById('cookie-banner').style.display = 'none';
     });
   </script>
+  <script async src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 </body>
 

@@ -1283,7 +1283,8 @@ Properties Style
   font-size: 18px;
 }
 .property-info span {
-  margin-right: 15px;
+  display: block;
+  margin-bottom: 5px; /* เพิ่มระยะห่างระหว่างบรรทัด */
 }
 .carousel img {
   width: 100%;
@@ -2150,6 +2151,28 @@ body {
   border: 1px solid #ddd;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #183F35 /* เปลี่ยนสีปุ่ม */
+}
+
+.swiper-pagination {
+  bottom: 10px;
+  color: #183F35;
+}
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  flex-shrink: 0;
+}
 
 @media (max-width: 992px) {
   .sub-header {
@@ -2240,6 +2263,15 @@ body {
     width: auto !important;
   }
 
+  h1 {
+    font-size: 48px; /* ขนาดปกติ */
+    white-space: nowrap; /* ป้องกันขึ้นบรรทัดใหม่ */
+  }
+  .nav-logo {
+    display: none; /* ซ่อนโลโก้ทุกขนาดจอ */
+  }
+
+
 }
 
 @media (max-width: 1200px) {
@@ -2283,13 +2315,15 @@ body {
     width: 80%;
     height: auto;
   }
-  .title-nature {
-    font-size: 32px;
+  .property-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* เพิ่มระยะห่างระหว่างบรรทัด */
   }
 
-  @media (max-width: 1880px) { 
+  @media (min-width: 769px) { /* แสดงโลโก้เฉพาะจอคอม */
     .nav-logo {
-      display: none;
+      display: block;
     }
   }
 
@@ -2305,4 +2339,31 @@ body {
       white-space: nowrap;
     }
 }
+@media (max-width: 1366px) { /* จอคอม 13 นิ้ว และ iPad แนวนอน */
+  h1 {
+    font-size: 40px;
+    white-space: nowrap; /* ป้องกันขึ้นบรรทัดใหม่ */
+  }
+}
+
+@media (max-width: 1024px) { /* iPad แนวตั้ง */
+  h1 {
+    font-size: 36px;
+    white-space: nowrap; /* ป้องกันขึ้นบรรทัดใหม่ */
+  }
+}
+
+@media (max-width: 768px) { /* จอมือถือ */
+  h1 {
+    font-size: 32px;
+    white-space: nowrap; /* ป้องกันขึ้นบรรทัดใหม่ */
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-5 {
+    padding-left: 0 !important; /* เอา padding ซ้ายออกในมือถือ */
+  }
+}
+
 }
